@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #333;
+}
+
+.tracker {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.step-display {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.step-label {
+    color: #333;
+}
+
+.step-value {
+    color: #333;
+}
+
+.calories-burned {
+    margin-top: 20px;
+}
+
+.calories-label {
+    color: #333;
+}
+
+.calories-value {
+    color: #333;
+}
+/* ... (Previous CSS code) ... */
+
+.step-input {
+    margin-top: 20px;
+    text-align: center;
+}
+
+label[for="step-range"] {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#step-range {
+    width: 80%;
+}
+
+.step-range-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c711ff;
+}
+
+#add-range-steps-button {
+    background-color: #c711ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#add-range-steps-button:hover {
+    background-color: #a500c8;
+}
+
+
+

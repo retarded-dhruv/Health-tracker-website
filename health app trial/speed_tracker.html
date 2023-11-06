@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesSpeed.css">
+    <title>Step Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Step Tracker</h1>
+    </header>
+    <main>
+        <section id="stepTracker" class="tracker">
+            <h2>Step Count</h2>
+            <div class="step-display">
+                <span class="calories-label">Added Steps:</span>
+                <span id="step-value" class="step-value">0</span>
+            </div>
+            <div class="calories-burned">
+                <span class="calories-label">Calories Burned:</span>
+                <span id="calories-value" class="calories-value">0.00</span>
+            </div>
+            <div class="step-input">
+                <label for="step-range">Add Steps:</label>
+                <input type="range" id="step-range" min="0" max="10000" step="1">
+                <span id="step-range-value" class="step-range-value">0</span>
+            </div>
+            
+        </section>
+    </main>
+    
+    <script src="scriptSpeed.js"></script>
+</body>
+</html>

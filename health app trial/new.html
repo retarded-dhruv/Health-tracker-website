@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Health and Fitness Tracker</title>
+</head>
+<body>
+  <header class="header">
+    <i class='bx bx-menu' id="menu-icon"></i>
+    
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+
+      <main>
+        <section id="home" class="hero">
+            <class class="overlay"></class>
+            <br>
+            <br>
+            <br>
+
+            <h1>Health and Fitness Tracker </h1>
+            <br>
+            <br>
+
+
+            <h2> The first <br> wealth is <br>health     </h2>
+            <br>
+            <br>
+            
+
+            <h3> --Track your health--
+            </h3>
+             <div>
+                </section>
+
+            </main>
+            
+        
+        <services class="services" id="services">
+            <h2 class="heading">Our <span>Services</span></h2>
+            
+            <div class="service-container">
+                        
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3><a href="bmi.html">BMI</a></h3>
+                <p>BMI, or Body Mass Index, is a simple yet widely used measure of a person's body weight in relation to their height. 
+                It provides a general indication of whether an individual is underweight, normal weight, overweight, or obese. 
+                While it's a useful tool for gauging overall health, BMI has limitations and doesn't account for factors like muscle mass or body composition.
+                 It's essential to interpret BMI results in conjunction with other health indicators for a more comprehensive assessment of one's well-being.</p>
+                            
+            </div>
+                        
+                        
+            <div class="services-box">
+                <i class='bx bx-desktop'></i>
+                <h3><a href="speed_tracker.html">Speed Tracker</a></h3>
+                <p>
+                    A speed tracker is a valuable tool for monitoring and recording the velocity of an object,
+                    typically used for tracking the speed of vehicles or athletic performance. It measures how fast an object moves over a specific distance and provides real-time data or historical records.
+                     Speed trackers find applications in sports training, traffic enforcement, and logistics, helping individuals and organizations optimize performance, ensure safety, and enhance efficiency</p>
+                    
+                
+            </div>
+
+            <div class="services-box">
+              <i class='bx bx-desktop'></i>
+              <h3><a href="diet.html">Diet Plans</a></h3>
+              <p>
+                  A speed tracker is a valuable tool for monitoring and recording the velocity of an object,
+                  typically used for tracking the speed of vehicles or athletic performance. It measures how fast an object moves over a specific distance and provides real-time data or historical records.
+                   Speed trackers find applications in sports training, traffic enforcement, and logistics, helping individuals and organizations optimize performance, ensure safety, and enhance efficiency</p>
+                  
+              
+          </div>
+
+        </div>
+
+            
+
+                </services>
+
+      
+
+      <section id="blog" class="blog">
+
+        <h2>Latest Posts</h2>
+        <br>
+        <br>
+        <div class="blog-post">
+          <h3>The Power of Data</h3>
+          <br>
+          
+          
+          
+          <p>Health tracking devices, ranging from fitness bands and smartwatches to mobile apps,
+             provide us with valuable data about our daily activities. This data, when used effectively,
+              can empower individuals to make informed decisions about their health.
+               It helps users understand their activity levels, diet, and sleep patterns,
+             which can be crucial in making lifestyle adjustments..</p>
+          
+          
+          
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <div class="blog-post">
+            <h3>Sleep Monotoring</h3>
+            <br>
+            
+            
+            <p>A good night's sleep is essential for overall health. Many health trackers provide
+              sleep tracking features, enabling you to monitor the quality and duration of your rest.
+              With this data, you can identify sleep patterns and work on improving your sleep hygiene,
+              which can have a positive impact on your energy levels and mood</p>
+            
+            
+            
+            </div>
+       
+        
+      </section>
+
+
+      <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+        <p>Get in touch with us today to schedule a counselling session or to learn more about our services.</p>
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <footer>
+        <p>&copy; 2023 Health Tracker. All rights reserved.</p>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+          Email.send({
+            Host : "smtp.gmail.com",
+            Username : "dhruvasthana2003@gmail.com",
+            Password : "akshitaasthana",
+            To : 'dhruvasthana2003@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form Enquiry",
+            Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+              message => alert("Message sent Succesfully")
+                  );
+            }
+    </script>
+</body>
+</html>

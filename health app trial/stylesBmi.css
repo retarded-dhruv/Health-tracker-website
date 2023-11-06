@@ -1,0 +1,69 @@
+/* ... (previous CSS remains the same) ... */
+
+.calculator {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.calculator h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.input-group {
+    margin: 15px 0;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.result label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.result output {
+    display: block;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bmiCategory {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button#calculateBMI {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+button#calculateBMI:hover {
+    background-color: #555;
+}
